@@ -103,12 +103,13 @@ img {
 .navbar {
     box-shadow: var(--box-shadow);
     background-color: var(--c-brand);
+    padding: 0.01rem;
     /* Fundo roxo para a navbar */
 }
 
 .nav-item {
     margin-right: 20px;
-    font-size: 1.3rem;
+    font-size: 1.0rem;
 }
 
 .navbar-nav .nav-link {
@@ -396,8 +397,12 @@ footer .line {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+#clients {
+    padding: 40px 0;
+}
+
 .title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: #6a0dad;
     margin-bottom: 20px;
@@ -405,9 +410,16 @@ footer .line {
 
 .review img {
     width: 18rem;
-    /* Defina o tamanho desejado */
+    /* Define o tamanho da imagem */
     height: auto;
     /* Mantém a proporção da imagem */
+    transition: transform 0.3s ease-in-out;
+    /* Transição suave */
+}
+
+.review img:hover {
+    transform: scale(1.2);
+    /* Aumenta a imagem em 10% */
 }
 
 .row.gy-5.gx-4 {
