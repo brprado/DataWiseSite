@@ -1,27 +1,58 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="assets/images/DataWise.ico" type="image/x-icon">
-    <title>Data Wise - Seja data-driven</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>DataWise AI - O poder da IA ao seu alcance</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+
+    <!-- Calendly badge widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/datawiseprojetos/30min?primary_color=8a3aff', text: 'Converse com um especialista!', color: '#8a3aff', textColor: '#ffffff' }); }</script>
+    <!-- Calendly badge widget end -->
+
+    
+
+    <style>
+        /* Adicionando as cores principais (Roxo #8a3aff e Branco) */
+        :root {
+            --brand-color: #8a3aff;
+            --secondary-color: #ffffff;
+        }
+        .navbar, .btn-brand, .bg-dark, .footer-top, .footer-bottom {
+            background-color: var(--brand-color) !important;
+        }
+        .text-white, .text-white h1, .text-white h5, .text-white p {
+            color: var(--secondary-color) !important;
+        }
+        .line {
+            background-color: var(--secondary-color) !important;
+        }
+    </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-white sticky-top" >
-        <div class="container" style="margin-bottom: -60px">
+    <nav class="navbar navbar-expand-lg sticky-top" >
+        <div class="container" style="margin-bottom: -20px">
             <a class="navbar-brand" href="#">
-               <p>
-                <img src="assets/images/DataWise.png" width="120px" alt="">
-                Data Wise</p>
+                <p class="text-white">
+                    <img src="assets/images/DataWise.png" width="100x" alt="">
+                    Data Wise AI
+                </p>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,22 +61,24 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#hero">Home</a>
+                        <a class="nav-link text-white" href="#hero">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Sobre nós</a>
+                        <a class="nav-link text-white" href="#about">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Serviços</a>
+                        <a class="nav-link text-white" href="#services">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#team">Equipe</a>
+                        <a class="nav-link text-white" href="#clients">Clientes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contato</a>
+                        <a class="nav-link text-white" href="#contact">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="https://wa.me/5511976902951" target="_blank" rel="noopener noreferrer">Dara🧠</a>
                     </li>
                 </ul>
-                
             </div>
         </div>
     </nav>
@@ -55,8 +88,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 data-aos="fade-left" class="text-uppercase text-white fw-semibold display-1">Bem-vindo à Data Wise</h1>
-                    <h5 class="text-white mt-3 mb-4" data-aos="fade-right" style="font-size: 1.9rem;">Decisões Inteligentes Guiadas por Dados</h5>
+                    <h1 data-aos="fade-left" class="fw-semibold display-1 text-white">Bem-vindo à DataWise AI</h1>
+<h5 class="mt-3 mb-4 text-white" data-aos="fade-right" style="font-size: 1.9rem;">O poder da IA ao seu alcance</h5>>
                     <div data-aos="fade-up" data-aos-delay="50">
                     </div>
                 </div>
@@ -72,7 +105,7 @@
                     <div class="section-title">
                         <h1 class="display-4 fw-semibold">Sobre Nós</h1>
                         <div class="line"></div>
-                        <p style="font-size: 1.2rem;">A Data Wise é uma empresa inovadora e comprometida com a excelência em soluções de análise de dados, inteligência de negócios e consultoria estratégica. Nossa missão é transformar dados em insights valiosos, ajudando empresas a tomar decisões mais assertivas e a alcançar resultados significativos</p>
+                        <p style="font-size: 1.2rem;">A DataWise AI é uma agência de inteligência artificial focada em construir automações para negócios utilizando IA de ponta. Nossa missão é automatizar processos e entregar soluções que otimizem o dia a dia das empresas, tornando-as mais eficientes e competitivas.</p>
                     </div>
                 </div>
             </div>
@@ -81,36 +114,35 @@
                     <img src="./assets/images/about.png" alt="">
                 </div>
                 <div data-aos="fade-down" data-aos-delay="150" class="col-lg-5">
-                    <h1>Por que a Data Wise?</h1>
-                    <p class="mt-3 mb-4">Por que somos os melhores?</p>
+                    <h1>Nossos Pilares</h1>
+                    <p class="mt-3 mb-4">Conheça os três pilares que sustentam nosso trabalho:</p>
                     <div class="d-flex pt-4 mb-3">
                         <div class="iconbox me-4">
-                            <i class="ri-mail-send-fill"></i>
+                            <i class="ri-brain-fill"></i>
                         </div>
                         <div>
-                            <h5>Soluções Personalizadas</h5>
-                            <p>Desenvolvemos soluções de análise de dados adaptadas às necessidades específicas do seu negócio.</p>
+                            <h5>Modelagem</h5>
+                            <p>Criamos modelos de IA personalizados para atender às necessidades específicas do seu negócio.</p>
                         </div>
                     </div>
                     <div class="d-flex mb-3">
                         <div class="iconbox me-4">
-                            <i class="ri-user-5-fill"></i>
+                            <i class="ri-code-fill"></i>
                         </div>
                         <div>
-                            <h5>Equipe Especializada</h5>
-                            <p>Nossa equipe de especialistas está sempre pronta para oferecer suporte e consultoria estratégica.</p>
+                            <h5>Desenvolvimento</h5>
+                            <p>Implementamos soluções de IA robustas e escaláveis, garantindo alta performance.</p>
                         </div>
                     </div>
                     <div class="d-flex">
                         <div class="iconbox me-4">
-                            <i class="ri-rocket-2-fill"></i>
+                            <i class="ri-customer-service-fill"></i>
                         </div>
                         <div>
-                            <h5>Inovação e Tecnologia</h5>
-                            <p>Utilizamos as tecnologias mais avançadas para transformar dados em insights valiosos e acionáveis.</p>
+                            <h5>Suporte Contínuo</h5>
+                            <p>Oferecemos suporte técnico e atualizações para manter suas soluções sempre funcionando perfeitamente.</p>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -124,7 +156,7 @@
                     <div class="section-title">
                         <h1 class="display-4 fw-semibold">Nossos Serviços</h1>
                         <div class="line"></div>
-                        <p>Transformamos dados em insights valiosos para impulsionar o sucesso do seu negócio.</p>
+                        <p>Oferecemos soluções de IA que automatizam processos e impulsionam a eficiência do seu negócio.</p>
                     </div>
                 </div>
             </div>
@@ -132,220 +164,150 @@
                 <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="150">
                     <div class="service theme-shadow p-lg-5 p-4">
                         <div class="iconbox">
-                            <i class="ri-pie-chart-2-fill"></i>
+                            <i class="ri-robot-3-line"></i>
                         </div>
-                        <h5 class="mt-4 mb-3">Análise de Dados</h5>
-                        <p>Utilizamos técnicas avançadas para transformar dados brutos em insights estratégicos.</p>
+                        <h5 class="mt-4 mb-3">Automação de Processos</h5>
+                        <p>Automatizamos tarefas repetitivas, aumentando a produtividade e reduzindo custos.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="250">
                     <div class="service theme-shadow p-lg-5 p-4">
                         <div class="iconbox">
-                            <i class="ri-bar-chart-grouped-fill"></i>
+                            <i class="ri-brain-2-line"></i>
                         </div>
-                        <h5 class="mt-4 mb-3">Business Intelligence</h5>
-                        <p>Desenvolvemos painéis de BI personalizados para o monitoramento eficaz dos seus KPIs.</p>
+                        <h5 class="mt-4 mb-3">IA Generativa</h5>
+                        <p>Desenvolvemos modelos de IA generativa para criar soluções inovadoras.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="350">
                     <div class="service theme-shadow p-lg-5 p-4">
                         <div class="iconbox">
-                            <i class="ri-chat-check-fill"></i>
+                            <i class="ri-bar-chart-box-ai-line"></i>
                         </div>
-                        <h5 class="mt-4 mb-3">Automação de Atendimento ao Cliente</h5>
-                        <p>Fluxos automatizados de atendimento ao cliente, otimizando processos e custos</p>
+                        <h5 class="mt-4 mb-3">Dashboards Inteligentes</h5>
+                        <p>Criamos painéis de dados interativos para monitoramento em tempo real.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="450">
                     <div class="service theme-shadow p-lg-5 p-4">
                         <div class="iconbox">
-                            <i class="ri-line-chart-fill"></i>
+                            <i class="ri-chat-ai-line"></i>
                         </div>
-                        <h5 class="mt-4 mb-3">Consultoria Estratégica</h5>
-                        <p>Oferecemos consultoria para ajudar sua empresa a tomar decisões baseadas em dados.</p>
+                        <h5 class="mt-4 mb-3">Chatbots Inteligentes</h5>
+                        <p>Implementamos chatbots para melhorar o atendimento ao cliente.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="550">
                     <div class="service theme-shadow p-lg-5 p-4">
                         <div class="iconbox">
-                            <i class="ri-settings-3-fill"></i>
+                            <i class="ri-cloud-line"></i>
                         </div>
-                        <h5 class="mt-4 mb-3">Automação de Processos</h5>
-                        <p>Automatizamos processos operacionais para aumentar a eficiência e reduzir custos.</p>
+                        <h5 class="mt-4 mb-3">Integração com Cloud</h5>
+                        <p>Conectamos suas soluções de IA a plataformas em nuvem para maior escalabilidade.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
                     <div class="service theme-shadow p-lg-5 p-4">
                         <div class="iconbox">
-                            <i class="ri-team-fill"></i>
+                            <i class="ri-home-gear-line"></i>
                         </div>
-                        <h5 class="mt-4 mb-3">Treinamentos e Capacitação</h5>
-                        <p>Capacitamos sua equipe para trabalhar de forma independente com análise de dados.</p>
+                        <h5 class="mt-4 mb-3">Otimização de Sistemas</h5>
+                        <p>Melhoramos a eficiência de sistemas existentes com IA.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 
     <!-- COUNTER -->
     <section id="counter" class="section-padding">
         <div class="container text-center">
             <div class="row g-4">
                 <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150">
-                    <h1 class="text-white display-4">50+</h1>
-                    <h6 class="text-uppercase mb-0 text-white mt-3">Automações e Pipelines Desenvolvidos</h6>
+                    <h1 class="display-4 text-white">50+</h1>
+                    <h6 class="text-uppercase mb-0 mt-3 text-white">Automações Implementadas</h6>
                 </div>
                 <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="250">
-                    <h1 class="text-white display-4">6+</h1>
-                    <h6 class="text-uppercase mb-0 text-white mt-3">Clientes</h6>
+                    <h1 class="display-4 text-white">6+</h1>
+                    <h6 class="text-uppercase mb-0 mt-3 text-white">Clientes Satisfeitos</h6>
                 </div>
                 <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="350">
-                    <h1 class="text-white display-4">60+</h1>
-                    <h6 class="text-uppercase mb-0 text-white mt-3">Dashboards Desenvolvidos</h6>
+                    <h1 class="display-4 text-white">60+</h1>
+                    <h6 class="text-uppercase mb-0 mt-3 text-white">Projetos Concluídos</h6>
                 </div>
                 <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="450">
-                    <h1 class="text-white display-4">100+</h1>
-                    <h6 class="text-uppercase mb-0 text-white mt-3">Colaboradores Treinados</h6>
+                    <h1 class="display-4 text-white">100+</h1>
+                    <h6 class="text-uppercase mb-0 mt-3 text-white">Horas de Suporte</h6>
                 </div>
             </div>
         </div>
     </section>
 
-    
-
     <!-- REVIEW -->
-    <section id="reviews" class="section-padding bg-light">
+    <!-- Seção de Logos dos Clientes -->
+    <section id="clients" class="section-padding bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
                     <div class="section-title">
-                        <h1 class="display-4 fw-semibold">Depoimentos</h1>
+                        <h1 class="display-4 fw-semibold">Empresas que confiam na DataWise AI</h1>
                         <div class="line"></div>
-                        <p>Somos especialistas em criar soluções baseadas em dados que impulsionam negócios a atingirem seus objetivos através de estratégias e tecnologia inovadoras.</p>
+                        <p class="subtext">Somos especialistas em criar soluções baseadas em dados que impulsionam negócios a atingirem seus objetivos através de estratégias e tecnologia inovadoras.</p>
                     </div>
                 </div>
             </div>
             <div class="row gy-5 gx-4">
                 <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="150">
                     <div class="review">
-                        <div class="review-head p-4 bg-white theme-shadow">
-                            <div class="text-warning">
-                                <i class="ri-star-fill"></i>
-                                <i class="ri-star-fill"></i>
-                                <i class="ri-star-fill"></i>
-                                <i class="ri-star-fill"></i>
-                                <i class="ri-star-fill"></i>
-                            </div>
-                            <p>A Data Wise transformou nossa abordagem para IA generativa e machine learning, entregando soluções que superaram nossas expectativas. Realmente impressionante!</p>
-                        </div>
-                        <div class="review-person mt-4 d-flex align-items-center">
-                            <img class="rounded-circle" src="./assets/images/avatar-1.jpg" alt="">
-                            <div class="ms-3">
-                                <h5>Maria Silva</h5>
-                                <small>Cientista de Dados, Coelba</small>
-                            </div>
-                        </div>
+                        <img src="assets\images\empresas\coelba.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="250">
                     <div class="review">
-                        <div class="review-head p-4 bg-white theme-shadow">
-                            <div class="text-warning">
-                                <i class="ri-star-fill"></i>
-                                <i class="ri-star-fill"></i>
-                                <i class="ri-star-fill"></i>
-                                <i class="ri-star-fill"></i>
-                                <i class="ri-star-fill"></i>
-                            </div>
-                            <p>As análises de dados e os dashboards em Power BI criados pela Data Wise nos proporcionaram insights claros, impulsionando uma melhor tomada de decisão em nossas operações.</p>
-                        </div>
-                        <div class="review-person mt-4 d-flex align-items-center">
-                            <img class="rounded-circle" src="./assets/images/avatar-2.jpg" alt="">
-                            <div class="ms-3">
-                                <h5>Lucas Pereira</h5>
-                                <small>Analista de Negócios, Continental</small>
-                            </div>
-                        </div>
+                        <img src="assets\images\empresas\marista.svg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="350">
                     <div class="review">
-                        <div class="review-head p-4 bg-white theme-shadow">
-                            <div class="text-warning">
-                                <i class="ri-star-fill"></i>
-                                <i class="ri-star-fill"></i>
-                                <i class="ri-star-fill"></i>
-                                <i class="ri-star-fill"></i>
-                                <i class="ri-star-fill"></i>
-                            </div>
-                            <p>A expertise da Data Wise em engenharia de dados nos ajudou a otimizar nossos pipelines de dados, garantindo que nossas análises fossem rápidas e confiáveis. Altamente recomendados!</p>
-                        </div>
-                        <div class="review-person mt-4 d-flex align-items-center">
-                            <img class="rounded-circle" src="./assets/images/avatar-3.jpg" alt="">
-                            <div class="ms-3">
-                                <h5>Ana Costa</h5>
-                                <small>Gerente de TI, Grupo Marista</small>
-                            </div>
-                        </div>
+                        <img src="assets\images\empresas\movezan.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="450">
-                    <div class="review">
-                        <div class="review-head p-4 bg-white theme-shadow">
-                            <div class="text-warning">
-                                <i class="ri-star-fill"></i>
-                                <i class="ri-star-fill"></i>
-                                <i class="ri-star-fill"></i>
-                                <i class="ri-star-fill"></i>
-                                <i class="ri-star-fill"></i>
-                            </div>
-                            <p>A equipe da Data Wise automatizou nossos processos de atendimento ao cliente, melhorando significativamente a eficiência e a satisfação dos nossos clientes. Trabalho fantástico!</p>
-                        </div>
-                        <div class="review-person mt-4 d-flex align-items-center">
-                            <img class="rounded-circle" src="./assets/images/avatar-4.jpg" alt="">
-                            <div class="ms-3">
-                                <h5>Carlos Mendes</h5>
-                                <small>Diretor de Operações, Eco System Rótulos e Etiquetas</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                
             </div>
         </div>
     </section>
+
     <!-- CONTACT -->
     <section class="section-padding bg-light" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
                     <div class="section-title">
-                        <h1 class="display-4 text-white fw-semibold">Entre em Contato</h1>
-                        <div class="line bg-white"></div>
-                        <p class="text-white">Nosso propósito é transformar seus dados em verdadeiros ativos estratégicos. Vamos iniciar essa jornada juntos?</p>
+                        <h1 class="display-4 fw-semibold text-white">Agende uma conversa ou entre em contato</h1>
+                          
+                        <div class="line bg-white"></div> <!-- Alterado para bg-white -->
+                        <p class="text-white", style="font-size: 1.3rem;">Pronto para transformar seu negócio com IA? Entre em contato conosco!</p>
+                         <!-- Calendly inline widget begin -->
+                         <div class="calendly-inline-widget" data-url="https://calendly.com/datawiseprojetos/30min?primary_color=8a3aff" style="min-width:320px;height:700px;"></div>
+                         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                         <!-- Calendly inline widget end -->
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="250">
                 <div class="col-lg-8">
                     <div class="p-lg-5 p-4 bg-white theme-shadow text-center">
-                        <p class="mb-4">Você pode nos contatar através do telefone ou enviar um e-mail clicando nos links abaixo:</p>
+                        <p class="mb-4"style="font-size: 1.3rem;">Você pode também nos contatar através do telefone ou enviar um e-mail clicando nos links abaixo:</p>
                         <p class="mb-2">
-                            <a href="https://w.app/datawise" class="btn btn-brand">Whatsapp</a>
+                            <a href="https://wa.me/5511976902951" target="_blank"class="btn btn-brand">Tire suas duvidas com a Dara, Nossa IA</a>
                         </p>
                         <p>
-                            <a href="mailto:contato@datawiseteam.com" class="btn btn-brand">contato@datawiseteam.com</a>
+                            <a href="mailto:contato@datawiseai.com" class="btn btn-brand">datawiseprojetos@gmail.com</a>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-
-    
 
     <!-- FOOTER -->
     <footer class="bg-dark">
@@ -353,31 +315,32 @@
             <div class="container">
                 <div class="row gy-5">
                     <div class="col-lg-3 col-sm-6">
-                        <p>Data Wise</p>
+                        <p>DataWise AI</p>
                         <div class="line"></div>
-                        <p>Transformando dados em insights poderosos para o crescimento do seu negócio.</p>
+                        <p>O poder da IA ao seu alcance.</p>
                         <div class="social-icons">
                             <a href="#"><i class="ri-instagram-fill"></i></a>
-                            <a href="https://www.linkedin.com/company/datawiseteam/"><i class="ri-linkedin-fill"></i></a>
+                            <a href="#"><i class="ri-linkedin-fill"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <h5 class="mb-0 text-white">SERVIÇOS</h5>
                         <div class="line"></div>
                         <ul>
-                            <li><a href="#">Análise de Dados</a></li>
-                            <li><a href="#">Business Intelligence</a></li>
-                            <li><a href="#">Machine Learning</a></li>
-                            <li><a href="#">Consultoria Estratégica</a></li>
+                            <li><a href="#">Automação de Processos</a></li>
+                            <li><a href="#">IA Generativa</a></li>
+                            <li><a href="#">Chatbots Inteligentes</a></li>
+                            <li><a href="#">Integração com Cloud</a></li>
                         </ul>
                     </div>
+
                     <div class="col-lg-3 col-sm-6">
                         <h5 class="mb-0 text-white">CONTATO</h5>
                         <div class="line"></div>
                         <ul>
                             <li>Salvador, BA</li>
                             <li>(71) 99643-4956</li>
-                            <li>contato@datawise.com</li>
+                            <li>contato@datawiseai.com</li>
                         </ul>
                     </div>
                 </div>
@@ -387,20 +350,15 @@
             <div class="container">
                 <div class="row g-4 justify-content-between">
                     <div class="col-auto">
-                        <p class="mb-0">© 2024 Data Wise. Todos os direitos reservados.</p>
+                        <p class="mb-0">© 2024 DataWise AI. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-auto">
-                        <p class="mb-0">Desenvolvido com 💜 por Data Wise Team</p>
+                        <p class="mb-0">Desenvolvido com 💜 por DataWise AI</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>

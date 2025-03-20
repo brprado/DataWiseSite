@@ -4,13 +4,21 @@
 /* VARIABLES */
 :root {
     --c-dark: #212529;
-    --c-brand: #51ade5;
-    --c-brand-light: #2c3892;
-    --c-brand-rgb: 78, 87, 212;
-    --c-body: #727272;
-    --font-base: "ClashDisplay", sans-serif;
+    /* Cor escura padrão */
+    --c-brand: #8a3aff;
+    /* Roxo principal da sua agência */
+    --c-brand-light: #6a1bff;
+    /* Tom mais claro do roxo para hover */
+    --c-brand-rgb: 138, 58, 255;
+    /* RGB do roxo principal */
+    --c-body: #404040;
+    /* Cor do texto padrão */
+    --font-base: "Montserrat", sans-serif;
+    /* Fonte base */
     --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
+    /* Sombra padrão */
     --transition: all 0.5s ease;
+    /* Transição suave */
 }
 
 /* RESET & HELPERS */
@@ -47,8 +55,16 @@ a {
     transition: var(--transition);
 }
 
+.navbar-nav .nav-link.text-white:hover {
+    color: white !important;
+    /* Mantém o texto branco ao passar o mouse */
+    opacity: 0.8;
+    /* Efeito de transparência sutil ao passar o mouse */
+}
+
 a:hover {
     color: var(--c-brand-light);
+    /* Cor do hover */
 }
 
 img {
@@ -68,7 +84,6 @@ img {
 /* IMAGE ZOOM */
 .image-zoom {
     position: relative;
-    /* overflow: hidden; */
 }
 
 .image-zoom-wrapper {
@@ -84,21 +99,37 @@ img {
     transform: scale(1.1);
 }
 
-
 /* NAVBAR */
 .navbar {
     box-shadow: var(--box-shadow);
+    background-color: var(--c-brand);
+    /* Fundo roxo para a navbar */
+}
+
+.nav-item {
+    margin-right: 20px;
+    font-size: 1.3rem;
 }
 
 .navbar-nav .nav-link {
     font-weight: 500;
-    color: var(--c-dark);
+    color: white;
+    /* Texto branco na navbar */
 }
 
 .navbar-nav .nav-link.active {
-    color: var(--c-brand);
+    color: white;
+    /* Texto branco para o link ativo */
+    opacity: 0.8;
+    /* Efeito de transparência */
 }
 
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 330;
+    color: white;
+    /* Texto branco para a marca */
+}
 
 /* BTN */
 .btn {
@@ -111,24 +142,25 @@ img {
 
 .btn-brand {
     background-color: var(--c-brand);
+    /* Botão roxo */
     border-color: var(--c-brand);
     color: white;
+    /* Texto branco */
 }
 
 .btn-brand:hover {
     background-color: var(--c-brand-light);
+    /* Tom mais claro no hover */
     border-color: var(--c-brand-light);
     color: white;
 }
 
-
 /* HERO */
 #hero {
-    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(../images/hero-1.jpg);
+    background: url(../images/hero-1.jpg);
     background-position: center;
     background-size: cover;
 }
-
 
 /* SECTION TITLE */
 .section-title {
@@ -139,6 +171,7 @@ img {
     width: 60px;
     height: 4px;
     background-color: var(--c-brand);
+    /* Linha roxa */
     margin: 16px auto 24px auto;
 }
 
@@ -148,7 +181,6 @@ img {
     margin-right: auto;
 }
 
-
 /* ICONBOX */
 .iconbox {
     width: 70px;
@@ -157,7 +189,9 @@ img {
     align-items: center;
     justify-content: center;
     background: rgba(var(--c-brand-rgb), 0.1);
+    /* Fundo com transparência */
     color: var(--c-brand);
+    /* Ícone roxo */
     font-size: 34px;
     flex: none;
 }
@@ -174,28 +208,32 @@ img {
     width: 40px;
     height: 40px;
     background: rgba(var(--c-brand-rgb), 0.2);
+    /* Fundo com transparência */
     position: absolute;
     bottom: 0;
     right: 0;
     transition: var(--transition);
 }
 
-
 .service:hover::after {
     width: 100%;
     height: 100%;
     background: var(--c-brand);
+    /* Fundo roxo no hover */
     z-index: -1;
 }
 
 .service:hover h5,
 .service:hover p {
     color: white;
+    /* Texto branco no hover */
 }
 
 .service:hover .iconbox {
     background-color: rgba(255, 255, 255, 0.2);
+    /* Fundo branco com transparência */
     color: white;
+    /* Ícone branco */
 }
 
 /* COUNTER */
@@ -208,7 +246,9 @@ img {
 /* PORTFOLIO */
 .portfolio-item .iconbox {
     background-color: var(--c-brand);
+    /* Fundo roxo */
     color: white;
+    /* Ícone branco */
     position: absolute;
     top: 40%;
     left: 50%;
@@ -226,6 +266,7 @@ img {
     font-weight: 600;
     text-transform: uppercase;
     color: var(--c-brand);
+    /* Texto roxo */
 }
 
 .review-head {
@@ -245,6 +286,7 @@ img {
 /* TEAM */
 .team-member-content {
     background-color: var(--c-brand);
+    /* Fundo roxo */
     position: absolute;
     bottom: -24px;
     left: 50%;
@@ -286,11 +328,14 @@ img {
 #contact .form-control:focus {
     box-shadow: none;
     border-color: var(--c-brand);
+    /* Borda roxa ao focar */
 }
 
 /* FOOTER */
 footer {
     padding-top: 120px;
+    background-color: var(--c-brand);
+    /* Fundo roxo */
 }
 
 .footer-top {
@@ -303,11 +348,11 @@ footer {
     padding-bottom: 40px;
 }
 
-
 footer li,
 footer p,
 footer a {
     color: rgba(255, 255, 255, 0.7);
+    /* Texto branco com transparência */
 }
 
 footer ul {
@@ -318,7 +363,8 @@ footer ul {
 footer .line {
     width: 40px;
     height: 4px;
-    background-color: var(--c-brand);
+    background-color: white;
+    /* Linha branca */
     margin-top: 12px;
     margin-bottom: 24px;
 }
@@ -330,10 +376,55 @@ footer .line {
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
+    /* Fundo branco com transparência */
     border-radius: 100px;
 }
 
 .social-icons a:hover {
-    background-color: var(--c-brand);
-    color: white;
+    background-color: white;
+    /* Fundo branco no hover */
+    color: var(--c-brand);
+    /* Ícone roxo no hover */
+}
+
+.container_empresas {
+    background-color: white;
+    padding: 40px;
+    max-width: 900px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6a0dad;
+    margin-bottom: 20px;
+}
+
+.review img {
+    width: 22rem;
+    /* Defina o tamanho desejado */
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
+
+.row.gy-5.gx-4 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* Alinha as colunas verticalmente */
+}
+
+.col-lg-4.col-sm-6 {
+    display: flex;
+    justify-content: center;
+    /* Centraliza o conteúdo das colunas */
+}
+
+.subtext {
+    font-size: 20px;
+    color: var(--c-body);
+    margin-top: 10px;
 }
